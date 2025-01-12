@@ -1,6 +1,6 @@
-# ProtocolLLM
+# Protocol LLM
 
-ProtocolLLM is a Python-based framework for handling terminal-PC communication for the Large Language Model (LLM) protocol. It provides a standardized interface for managing tasks, executing commands, and handling session-based interactions.
+ProtocolLLM is a Python-based framework for handling terminal-PC communication for the Large Language Model (LLM) protocol. 
 
 An **experimental !!** LLM-PC protocol
 

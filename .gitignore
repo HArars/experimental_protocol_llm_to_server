@@ -1,0 +1,21 @@
+# Python source specific
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test cache
+.pytest_cache/
+.coverage
+coverage.xml
+*.cover
+
+# Local development
+*.log
+.env
+config.local.yaml
+
+# IDE workspace specific
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
