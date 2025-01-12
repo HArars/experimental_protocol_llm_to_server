@@ -1,19 +1,19 @@
 import logging
 import os
 
-# 配置日志记录器
+# Configure the logger
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 修正格式字符串
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # Corrected format string
     handlers=[
         logging.StreamHandler(),
         logging.FileHandler(os.path.join(os.path.dirname(__file__), 'app.log'))
     ]
 )
 
-# 创建 LOGGER 对象
+# Create LOGGER object
 LOGGER = logging.getLogger('LLMApp')
 
-# 设置第三方库的日志级别
+# Set log level for third-party libraries
 logging.getLogger('werkzeug').setLevel(logging.WARNING)
 logging.getLogger('flask').setLevel(logging.WARNING)

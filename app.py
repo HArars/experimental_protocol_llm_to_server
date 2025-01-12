@@ -46,8 +46,11 @@ async def process_tasks():
             if task["type"] == "end":
                 return "Session ended", 200
         
+        # Build the task tree from the list of tasks
         root_nodes = await build_task_tree(tasks)
+        # Execute the task tree and collect results
         results = await execute_task_tree(root_nodes, lambda task: TASK_HANDLERS[task.type](task))
+        # Build the prompt based on the results
         prompt = build_prompt(results)
         return prompt, 200
     except ValueError as e:

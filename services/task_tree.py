@@ -14,7 +14,7 @@ class TaskNode:
 
 
 async def check_circular_dependency(nodes):
-    """检查循环依赖"""
+    """Check for circular dependencies"""
     visited = set()
     path = set()
     
@@ -39,16 +39,16 @@ async def check_circular_dependency(nodes):
 
 async def build_task_tree(tasks):
     """
-    构建任务执行树。
-    :param tasks: JSON 中的任务列表
-    :return: 根节点列表
+    Build the task execution tree.
+    :param tasks: List of tasks from JSON
+    :return: List of root nodes
     """
     nodes = {task["id"]: TaskNode(task) for task in tasks}
     
-    # 检查循环依赖
+    # Check for circular dependencies
     await check_circular_dependency(nodes)
 
-    # 建立父子依赖关系
+    # Establish parent-child relationships
     for node in nodes.values():
         for dep_id in node.depends_on:
             parent = nodes.get(dep_id)
@@ -56,17 +56,17 @@ async def build_task_tree(tasks):
                 raise ValueError(f"Dependency task {dep_id} not found for task {node.id}.")
             parent.children.append(node)
 
-    # 找到根节点（没有依赖的任务）
+    # Find root nodes (tasks with no dependencies)
     root_nodes = [node for node in nodes.values() if not node.depends_on]
     return root_nodes
 
 
 async def execute_task_tree(root_nodes, handle_task):
     """
-    执行任务树中的任务。
-    :param root_nodes: 根节点列表
-    :param handle_task: 任务执行函数
-    :return: 执行结果列表
+    Execute tasks in the task tree.
+    :param root_nodes: List of root nodes
+    :param handle_task: Task execution function
+    :return: List of execution results
     """
     results = []
 
@@ -74,7 +74,7 @@ async def execute_task_tree(root_nodes, handle_task):
         if node.executed:
             return
 
-        # 先执行当前任务
+        # Execute the current task first
         try:
             result = await handle_task(node)
             results.append({"id": node.id, "type": node.type, "success": True, "description": result})
@@ -83,7 +83,7 @@ async def execute_task_tree(root_nodes, handle_task):
 
         node.executed = True
 
-        # 再执行所有子节点
+        # Then execute all child nodes
         for child in node.children:
             await execute_node(child)
 
