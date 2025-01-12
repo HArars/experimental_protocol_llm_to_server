@@ -8,6 +8,7 @@ __pycache__/
 .coverage
 coverage.xml
 *.cover
+test
 
 # Local development
 *.log
