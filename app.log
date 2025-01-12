@@ -1,0 +1,196 @@
+2025-01-12 06:38:48,423 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 06:38:50,280 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 06:39:05,873 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 06:39:05,874 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 06:39:05,876 - LLMApp - INFO - Handling exec task with command: mkdir hello
+2025-01-12 06:39:05,876 - LLMApp - WARNING - Unauthorized command attempt: mkdir hello
+2025-01-12 06:39:05,876 - LLMApp - ERROR - Command execution failed: Command not allowed
+2025-01-12 06:39:44,656 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 06:39:44,657 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 06:39:44,667 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 06:39:44,667 - LLMApp - WARNING - Unauthorized command attempt: npm --version
+2025-01-12 06:39:44,667 - LLMApp - ERROR - Command execution failed: Command not allowed
+2025-01-12 06:39:47,173 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 06:39:47,173 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 06:39:47,175 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 06:39:47,175 - LLMApp - WARNING - Unauthorized command attempt: npm --version
+2025-01-12 06:39:47,175 - LLMApp - ERROR - Command execution failed: Command not allowed
+2025-01-12 06:39:52,816 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 06:39:57,151 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 06:39:57,151 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 06:39:57,153 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 06:39:57,153 - LLMApp - WARNING - Unauthorized command attempt: npm --version
+2025-01-12 06:39:57,153 - LLMApp - ERROR - Command execution failed: Command not allowed
+2025-01-12 06:40:09,140 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 06:40:10,412 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 06:40:12,838 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 06:40:12,838 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 06:40:12,839 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 06:40:12,840 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 06:40:12,840 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 06:40:12,840 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 06:40:13,109 - LLMApp - INFO - Command output: 10.9.0
+2025-01-12 06:40:23,769 - LLMApp - WARNING - Non-JSON request received
+2025-01-12 06:40:26,261 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 06:40:26,261 - LLMApp - WARNING - Invalid request format received
+2025-01-12 06:40:31,768 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 06:40:31,768 - LLMApp - WARNING - Invalid task format: {'type': 'write'}
+2025-01-12 06:40:38,727 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 06:40:54,656 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 06:40:54,657 - LLMApp - INFO - Handling exec task with command: echo Hello, World!
+2025-01-12 06:40:54,657 - LLMApp - WARNING - Unauthorized command attempt: echo Hello, World!
+2025-01-12 06:40:54,658 - LLMApp - ERROR - Command execution failed: Command not allowed
+2025-01-12 06:41:09,947 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 06:41:13,063 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 06:41:13,064 - LLMApp - INFO - Handling exec task with command: echo Hello, World!
+2025-01-12 06:41:13,064 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 06:41:13,064 - LLMApp - INFO - Executing command: echo Hello, World!
+2025-01-12 06:41:13,065 - LLMApp - WARNING - safe_command: ['echo', 'Hello,', 'World!']
+2025-01-12 06:41:13,087 - LLMApp - INFO - Command output: Hello, World!
+2025-01-12 06:41:20,951 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 06:41:20,952 - LLMApp - INFO - Handling delete task for path: test/test_tasks/file1.txt
+2025-01-12 06:41:37,011 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 06:41:37,011 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 06:41:37,014 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 06:41:37,014 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 06:41:37,014 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 06:41:37,014 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 06:41:37,316 - LLMApp - INFO - Command output: 10.9.0
+2025-01-12 06:41:48,043 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 06:41:48,044 - LLMApp - INFO - Handling move task from test/test_tasks/file1.txt to test/test_tasks/file1_moved.txt
+2025-01-12 06:41:53,950 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 06:41:57,722 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 06:42:09,569 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 06:42:09,569 - LLMApp - INFO - Handling mkdir task for path: test/test_tasks/new_directory
+2025-01-12 06:42:09,570 - LLMApp - INFO - Directory 'test/test_tasks/new_directory' created successfully
+2025-01-12 07:26:08,543 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:50:19,685 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:50:26,437 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 07:50:26,437 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 07:50:26,439 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 07:50:26,440 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 07:50:26,440 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 07:50:26,440 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 07:50:26,684 - LLMApp - INFO - Command output: 10.9.0
+2025-01-12 07:50:36,547 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 07:50:36,547 - LLMApp - WARNING - Invalid request format received
+2025-01-12 07:50:41,002 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 07:50:41,004 - LLMApp - WARNING - Invalid tasks format or empty tasks list
+2025-01-12 07:50:43,820 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 07:50:43,821 - LLMApp - WARNING - Invalid task format: {'type': 'write'}
+2025-01-12 07:50:48,459 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 07:50:48,460 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 07:51:01,649 - LLMApp - INFO - Processing tasks for session_id: session_123
+2025-01-12 07:51:15,370 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:51:17,707 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:51:22,897 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 07:51:22,897 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 07:51:45,125 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:51:49,716 - LLMApp - INFO - Processing tasks for session_id: session_56789
+2025-01-12 07:51:49,716 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 07:51:49,717 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 07:51:49,717 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 07:51:49,717 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 07:51:49,717 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 07:51:49,948 - LLMApp - INFO - Command output: 10.9.0
+2025-01-12 07:51:55,456 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:51:59,794 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:52:02,170 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:52:04,476 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:55:51,454 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 07:55:54,860 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 07:55:54,860 - LLMApp - ERROR - Unexpected error: 'coroutine' object is not iterable
+2025-01-12 07:55:56,791 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 07:55:56,792 - LLMApp - ERROR - Unexpected error: 'coroutine' object is not iterable
+2025-01-12 07:57:26,063 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 08:01:36,261 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 08:01:55,083 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 08:01:55,083 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 08:01:55,083 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 08:01:55,083 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 08:01:55,083 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 08:01:55,083 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 08:01:55,332 - LLMApp - INFO - Command output: 10.9.0
+2025-01-12 08:02:14,666 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 08:02:19,318 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 08:02:19,318 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 08:02:19,322 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 08:02:19,322 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 08:02:19,322 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 08:02:19,322 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 08:02:19,562 - LLMApp - INFO - Command output: 10.9.0
+2025-01-12 08:05:17,551 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 08:05:19,591 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 08:05:19,591 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 08:05:19,591 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 08:05:19,591 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 08:05:19,591 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 08:05:19,591 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 08:05:19,834 - LLMApp - INFO - Command output: 10.9.0
+2025-01-12 08:11:07,371 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 08:11:10,413 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 08:11:10,413 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 08:11:10,416 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 08:11:10,416 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 08:11:10,416 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 08:11:10,416 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 08:11:10,650 - LLMApp - INFO - Command output: 10.9.0
+2025-01-12 08:11:24,612 - LLMApp - WARNING - Non-JSON request received
+2025-01-12 08:11:26,627 - LLMApp - WARNING - Non-JSON request received
+2025-01-12 08:11:29,462 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 08:11:29,462 - LLMApp - WARNING - Invalid tasks format or empty tasks list
+2025-01-12 08:11:32,256 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 08:11:32,256 - LLMApp - WARNING - Invalid task format: {'type': 'write'}
+2025-01-12 08:11:36,532 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:11:36,533 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 08:11:42,104 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:11:46,993 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:11:46,993 - LLMApp - INFO - Handling exec task with command: echo Hello, World!
+2025-01-12 08:11:46,994 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 08:11:46,994 - LLMApp - INFO - Executing command: echo Hello, World!
+2025-01-12 08:11:46,994 - LLMApp - WARNING - safe_command: ['echo', 'Hello,', 'World!']
+2025-01-12 08:11:47,015 - LLMApp - INFO - Command output: Hello, World!
+2025-01-12 08:11:50,690 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:11:50,691 - LLMApp - INFO - Handling delete task for path: test/test_tasks/file1.txt
+2025-01-12 08:11:56,386 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:11:56,387 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 08:12:00,286 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:12:00,286 - LLMApp - INFO - Handling move task from test/test_tasks/file1.txt to test/test_tasks/file1_moved.txt
+2025-01-12 08:12:03,380 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:12:06,536 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:12:09,486 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:12:09,486 - LLMApp - INFO - Handling mkdir task for path: test/test_tasks/new_directory
+2025-01-12 08:12:09,487 - LLMApp - INFO - Directory 'test/test_tasks/new_directory' created successfully
+2025-01-12 08:12:12,192 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:12:22,944 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:12:26,095 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:12:26,095 - LLMApp - INFO - Handling mkdir task for path: test/test_tasks/new_directory
+2025-01-12 08:12:26,096 - LLMApp - INFO - Directory 'test/test_tasks/new_directory' already exists
+2025-01-12 08:12:28,301 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:14:38,510 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 08:15:10,892 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 08:15:15,479 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:18,958 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:19,676 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:20,750 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:22,654 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:22,654 - LLMApp - INFO - Handling mkdir task for path: test/test_tasks/new_directory
+2025-01-12 08:15:22,655 - LLMApp - INFO - Directory 'test/test_tasks/new_directory' already exists
+2025-01-12 08:15:25,395 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:25,396 - LLMApp - INFO - Handling mkdir task for path: test/test_tasks/new_directory
+2025-01-12 08:15:25,397 - LLMApp - INFO - Directory 'test/test_tasks/new_directory' already exists
+2025-01-12 08:15:27,601 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:38,043 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:38,973 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:44,242 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 08:15:44,243 - LLMApp - INFO - Handling mkdir task for path: test/test_tasks/new_directory_2
+2025-01-12 08:15:44,244 - LLMApp - INFO - Directory 'test/test_tasks/new_directory_2' created successfully
+2025-01-12 08:15:46,062 - LLMApp - INFO - Processing tasks for session: session_123
+2025-01-12 17:53:00,632 - werkzeug - WARNING -  * Debugger is active!
+2025-01-12 17:53:05,095 - LLMApp - INFO - Processing tasks for session: session_56789
+2025-01-12 17:53:05,095 - LLMApp - INFO - Handling write task for path: test/test_tasks/file1.txt
+2025-01-12 17:53:05,097 - LLMApp - INFO - Handling exec task with command: npm --version
+2025-01-12 17:53:05,097 - LLMApp - INFO - Current working directory: D:\Packets\Projects\ProtocolLLM\LLMv3\PythonProject\src
+2025-01-12 17:53:05,097 - LLMApp - INFO - Executing command: npm --version
+2025-01-12 17:53:05,097 - LLMApp - WARNING - safe_command: ['npm', '--version']
+2025-01-12 17:53:05,357 - LLMApp - INFO - Command output: 10.9.0

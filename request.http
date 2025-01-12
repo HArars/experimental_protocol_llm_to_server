@@ -1,0 +1,269 @@
+### Normal Request
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_56789",
+  "request": {
+    "tasks": [
+      {
+        "id": 1,
+        "type": "write",
+        "parameters": {
+          "path": "test/test_tasks/file1.txt",
+          "content": "This is the content of file1."
+        },
+        "execution_order": 1
+      },
+      {
+        "id": 3,
+        "type": "read",
+        "parameters": {
+          "path": "test/test_tasks/file1.txt"
+        },
+        "depends_on": [2],
+        "execution_order": 3
+      },
+      {
+        "id": 2,
+        "type": "exec",
+        "parameters": {
+          "command": "npm --version"
+        },
+        "depends_on": [1],
+        "execution_order": 2
+      }
+    ]
+  }
+}
+
+### Expected Response: 200 OK
+
+### Missing session_id
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "request": {
+    "tasks": [
+      {
+        "id": 1,
+        "type": "write",
+        "parameters": {
+          "path": "src/test/test_tasks/file1.txt",
+          "content": "This is the content of file1."
+        },
+        "execution_order": 1
+      }
+    ]
+  }
+}
+### Expected Response: 400 Missing session_id
+
+### Non-JSON Request
+POST http://localhost:3000/tasks
+Content-Type: text/plain
+
+This is not a JSON request.
+### Expected Response: 400 The content type of the request must be application/json
+
+### Invalid Request Format
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_56789"
+}
+### Expected Response: 400 Invalid request format
+
+### Empty Task List
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_56789",
+  "request": {
+    "tasks": []
+  }
+}
+### Expected Response: 400 Tasks must be a non-empty array
+
+### Invalid Task Format
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_56789",
+  "request": {
+    "tasks": [
+      {
+        "type": "write"
+      }
+    ]
+  }
+}
+### Expected Response: 400 Each task must include 'type' and 'id'
+
+### Write File Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_123",
+  "request": {
+    "tasks": [
+      {
+        "id": 1,
+        "type": "write",
+        "parameters": {
+          "path": "test/test_tasks/file1.txt",
+          "content": "This is the content of file1."
+        },
+        "execution_order": 1
+      }
+    ]
+  }
+}
+
+### Read File Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_123",
+  "request": {
+    "tasks": [
+      {
+        "id": 2,
+        "type": "read",
+        "parameters": {
+          "path": "test/test_tasks/file1.txt"
+        },
+        "execution_order": 2
+      }
+    ]
+  }
+}
+
+### Execute Command Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_123",
+  "request": {
+    "tasks": [
+      {
+        "id": 3,
+        "type": "exec",
+        "parameters": {
+          "command": "echo Hello, World!"
+        },
+        "execution_order": 3
+      }
+    ]
+  }
+}
+
+### Delete File Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_123",
+  "request": {
+    "tasks": [
+      {
+        "id": 4,
+        "type": "delete",
+        "parameters": {
+          "path": "test/test_tasks/file1.txt"
+        },
+        "execution_order": 4
+      }
+    ]
+  }
+}
+
+### Move File Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_123",
+  "request": {
+    "tasks": [
+      {
+        "id": 5,
+        "type": "move",
+        "parameters": {
+          "source": "test/test_tasks/file1.txt",
+          "destination": "test/test_tasks/file1_moved.txt"
+        },
+        "execution_order": 5
+      }
+    ]
+  }
+}
+
+### Copy File Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_123",
+  "request": {
+    "tasks": [
+      {
+        "id": 6,
+        "type": "copy",
+        "parameters": {
+          "source": "test/test_tasks/file1_moved.txt",
+          "destination": "test/test_tasks/file1_copy.txt"
+        },
+        "execution_order": 6
+      }
+    ]
+  }
+}
+
+### List Directory Contents Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_123",
+  "request": {
+    "tasks": [
+      {
+        "id": 7,
+        "type": "list",
+        "parameters": {
+          "path": "test/test_tasks",
+          "recursive": true
+        },
+        "execution_order": 7
+      }
+    ]
+  }
+}
+
+### Create Directory Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "session_id": "session_123",
+  "request": {
+    "tasks": [
+      {
+        "id": 8,
+        "type": "mkdir",
+        "parameters": {
+          "path": "test/test_tasks/new_directory_2"
+        },
+        "execution_order": 8
+      }
+    ]
+  }
+}

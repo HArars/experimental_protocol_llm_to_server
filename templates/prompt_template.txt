@@ -1,0 +1,13 @@
+Hello!
+
+Here are the tasks we processed for you:
+
+{{TASK_DETAILS}}
+
+Overall Result:
+{{SUMMARY}}
+
+Next Steps:
+{{NEXT_STEPS}}
+
+Thank you for using our service.

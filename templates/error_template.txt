@@ -1,0 +1,9 @@
+Error occurred!
+
+Error Details:
+{{ERROR_MESSAGE}}
+
+Task Details:
+{{TASK_DETAILS}}
+
+Please review the error and try again.
