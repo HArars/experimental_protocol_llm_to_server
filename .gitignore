@@ -1,5 +1,6 @@
 # Python source specific
 __pycache__/
+*.__pycache__/
 *.py[cod]
 *$py.class
 
@@ -9,6 +10,8 @@ __pycache__/
 coverage.xml
 *.cover
 test
+logs
+app.log
 
 # Local development
 *.log
